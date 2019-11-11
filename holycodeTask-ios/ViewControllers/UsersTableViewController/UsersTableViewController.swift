@@ -9,10 +9,26 @@
 import UIKit
 
 class UsersTableViewController: UITableViewController {
-        
+    
+    // MARK: - Computed properties
+    
+    fileprivate var users = [User]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    fileprivate var page: Int = 1 {
+        didSet {
+            self.getUsers(page: page)
+        }
+    }
+    
+    // MARK: - Lifecycle methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
+        getUsers()
         setupViews()
     }
     
@@ -22,6 +38,11 @@ class UsersTableViewController: UITableViewController {
         tableView.register(UINib(nibName: BasicUserDetailsTableViewCell.name, bundle: nil), forCellReuseIdentifier: BasicUserDetailsTableViewCell.name)
     }
     
+    private func getUsers(page: Int = 1) {
+        UsersRepository().loadFromAPI(page: page) { [weak self] (users, error) in
+            self?.users.append(contentsOf: users)
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate methods
@@ -29,14 +50,14 @@ class UsersTableViewController: UITableViewController {
 extension UsersTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BasicUserDetailsTableViewCell.name, for: indexPath) as? BasicUserDetailsTableViewCell else {
             return UITableViewCell()
         }
-        
+        cell.populateData(with: users[indexPath.row])
         return cell
     }
     
@@ -45,7 +66,9 @@ extension UsersTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
+        if indexPath.row + 1 == users.count { // Table view will display last cell
+            page += 1
+        }
     }
 }
 
