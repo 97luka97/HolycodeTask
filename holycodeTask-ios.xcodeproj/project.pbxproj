@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07863907237987B1009CA6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863906237987B1009CA6C3 /* AppDelegate.swift */; };
 		07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863908237987B1009CA6C3 /* SceneDelegate.swift */; };
-		0786390B237987B1009CA6C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786390A237987B1009CA6C3 /* ViewController.swift */; };
 		0786390E237987B1009CA6C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0786390C237987B1009CA6C3 /* Main.storyboard */; };
 		07863910237987B2009CA6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0786390F237987B2009CA6C3 /* Assets.xcassets */; };
 		07863913237987B2009CA6C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07863911237987B2009CA6C3 /* LaunchScreen.storyboard */; };
 		0786391E237987B2009CA6C3 /* holycodeTask_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786391D237987B2009CA6C3 /* holycodeTask_iosTests.swift */; };
 		07863929237987B2009CA6C3 /* holycodeTask_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863928237987B2009CA6C3 /* holycodeTask_iosUITests.swift */; };
+		0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786393F23798A9A009CA6C3 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +35,7 @@
 
 /* Begin PBXFileReference section */
 		07863903237987B1009CA6C3 /* holycodeTask-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "holycodeTask-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07863906237987B1009CA6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07863908237987B1009CA6C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0786390A237987B1009CA6C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0786390D237987B1009CA6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0786390F237987B2009CA6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07863912237987B2009CA6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		07863924237987B2009CA6C3 /* holycodeTask-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "holycodeTask-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07863928237987B2009CA6C3 /* holycodeTask_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holycodeTask_iosUITests.swift; sourceTree = "<group>"; };
 		0786392A237987B2009CA6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0786393F23798A9A009CA6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +97,13 @@
 		07863905237987B1009CA6C3 /* holycodeTask-ios */ = {
 			isa = PBXGroup;
 			children = (
-				07863906237987B1009CA6C3 /* AppDelegate.swift */,
-				07863908237987B1009CA6C3 /* SceneDelegate.swift */,
-				0786390A237987B1009CA6C3 /* ViewController.swift */,
-				0786390C237987B1009CA6C3 /* Main.storyboard */,
-				0786390F237987B2009CA6C3 /* Assets.xcassets */,
-				07863911237987B2009CA6C3 /* LaunchScreen.storyboard */,
-				07863914237987B2009CA6C3 /* Info.plist */,
+				0786393A23798889009CA6C3 /* Components */,
+				0786393923798887009CA6C3 /* Models */,
+				0786393823798885009CA6C3 /* Resources */,
+				0786393723798883009CA6C3 /* NetworkingService */,
+				078639362379887E009CA6C3 /* Storyboards */,
+				0786393B237988C8009CA6C3 /* Utilities */,
+				0786393C237988CC009CA6C3 /* ViewControllers */,
 			);
 			path = "holycodeTask-ios";
 			sourceTree = "<group>";
@@ -126,6 +124,77 @@
 				0786392A237987B2009CA6C3 /* Info.plist */,
 			);
 			path = "holycodeTask-iosUITests";
+			sourceTree = "<group>";
+		};
+		078639362379887E009CA6C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0786390C237987B1009CA6C3 /* Main.storyboard */,
+				07863911237987B2009CA6C3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0786393723798883009CA6C3 /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkingService;
+			sourceTree = "<group>";
+		};
+		0786393823798885009CA6C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0786390F237987B2009CA6C3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0786393923798887009CA6C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0786393A23798889009CA6C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0786393B237988C8009CA6C3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0786393D237988CF009CA6C3 /* Extensions */,
+				0786393E2379890A009CA6C3 /* Protocols */,
+				0786393F23798A9A009CA6C3 /* AppDelegate.swift */,
+				07863914237987B2009CA6C3 /* Info.plist */,
+				07863908237987B1009CA6C3 /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0786393C237988CC009CA6C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0786393D237988CF009CA6C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0786393E2379890A009CA6C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0786390B237987B1009CA6C3 /* ViewController.swift in Sources */,
-				07863907237987B1009CA6C3 /* AppDelegate.swift in Sources */,
+				0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */,
 				07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "holycodeTask-ios/Info.plist";
+				INFOPLIST_FILE = "holycodeTask-ios/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "holycodeTask-ios/Info.plist";
+				INFOPLIST_FILE = "holycodeTask-ios/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
