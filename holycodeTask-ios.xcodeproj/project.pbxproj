@@ -24,6 +24,13 @@
 		0786395323798BB2009CA6C3 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394A23798BB2009CA6C3 /* Ubuntu-B.ttf */; };
 		0786395423798BB2009CA6C3 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394B23798BB2009CA6C3 /* Ubuntu-C.ttf */; };
 		0786395523798BB2009CA6C3 /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */; };
+		0786395923798CA9009CA6C3 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786395723798CA9009CA6C3 /* UsersTableViewController.swift */; };
+		0786395A23798CA9009CA6C3 /* UsersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786395823798CA9009CA6C3 /* UsersTableViewController.xib */; };
+		0786396023798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786395E23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift */; };
+		0786396123798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786395F23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib */; };
+		07863963237990B7009CA6C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863962237990B7009CA6C3 /* UIView.swift */; };
+		07863965237990CC009CA6C3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863964237990CC009CA6C3 /* UIViewController.swift */; };
+		078639672379916B009CA6C3 /* BorderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639662379916B009CA6C3 /* BorderImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		0786394A23798BB2009CA6C3 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
 		0786394B23798BB2009CA6C3 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
 		0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
+		0786395723798CA9009CA6C3 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		0786395823798CA9009CA6C3 /* UsersTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewController.xib; sourceTree = "<group>"; };
+		0786395E23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUserDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		0786395F23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicUserDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		07863962237990B7009CA6C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		07863964237990CC009CA6C3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		078639662379916B009CA6C3 /* BorderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +196,8 @@
 		0786393A23798889009CA6C3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0786395B23798D2A009CA6C3 /* TableViewCells */,
+				078639662379916B009CA6C3 /* BorderImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +217,7 @@
 		0786393C237988CC009CA6C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0786395623798C89009CA6C3 /* UsersTableViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -208,6 +225,8 @@
 		0786393D237988CF009CA6C3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07863962237990B7009CA6C3 /* UIView.swift */,
+				07863964237990CC009CA6C3 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +252,32 @@
 				0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0786395623798C89009CA6C3 /* UsersTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0786395723798CA9009CA6C3 /* UsersTableViewController.swift */,
+				0786395823798CA9009CA6C3 /* UsersTableViewController.xib */,
+			);
+			path = UsersTableViewController;
+			sourceTree = "<group>";
+		};
+		0786395B23798D2A009CA6C3 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0786395D23798D48009CA6C3 /* BasicUserDetailsTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		0786395D23798D48009CA6C3 /* BasicUserDetailsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0786395E23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift */,
+				0786395F23798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib */,
+			);
+			path = BasicUserDetailsTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +386,9 @@
 			files = (
 				0786395523798BB2009CA6C3 /* Ubuntu-RI.ttf in Resources */,
 				0786395023798BB2009CA6C3 /* Ubuntu-MI.ttf in Resources */,
+				0786395A23798CA9009CA6C3 /* UsersTableViewController.xib in Resources */,
 				0786394F23798BB2009CA6C3 /* Ubuntu-BI.ttf in Resources */,
+				0786396123798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib in Resources */,
 				0786395123798BB2009CA6C3 /* Ubuntu-R.ttf in Resources */,
 				07863913237987B2009CA6C3 /* LaunchScreen.storyboard in Resources */,
 				0786394E23798BB2009CA6C3 /* Ubuntu-L.ttf in Resources */,
@@ -375,8 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07863965237990CC009CA6C3 /* UIViewController.swift in Sources */,
 				0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */,
+				0786396023798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift in Sources */,
 				07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */,
+				078639672379916B009CA6C3 /* BorderImageView.swift in Sources */,
+				0786395923798CA9009CA6C3 /* UsersTableViewController.swift in Sources */,
+				07863963237990B7009CA6C3 /* UIView.swift in Sources */,
 				0786394223798B67009CA6C3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -41,10 +41,12 @@ struct Name: Codable {
     
     let firstName: String
     let lastName: String
+    let title: String
     
     enum CodingKeys: String, CodingKey {
         case firstName = "first"
         case lastName = "last"
+        case title
     }
 }
 
