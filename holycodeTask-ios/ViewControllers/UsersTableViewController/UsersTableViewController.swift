@@ -12,12 +12,14 @@ class UsersTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        registerCell()
+        setupViews()
+    }
+    
+    // MARK: - Private methods
+    
+    private func registerCell() {
+        tableView.register(UINib(nibName: BasicUserDetailsTableViewCell.name, bundle: nil), forCellReuseIdentifier: BasicUserDetailsTableViewCell.name)
     }
     
 }
@@ -27,7 +29,7 @@ class UsersTableViewController: UITableViewController {
 extension UsersTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,3 +48,20 @@ extension UsersTableViewController {
         
     }
 }
+
+// MARK: - UIStyling methods
+
+extension UsersTableViewController: UIStyling {
+    
+    func setupViews() {
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = .black
+        tableView.rowHeight = 124
+    }
+    
+    func setupConstraints() {
+        
+    }
+    
+}
+

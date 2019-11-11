@@ -31,6 +31,8 @@
 		07863963237990B7009CA6C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863962237990B7009CA6C3 /* UIView.swift */; };
 		07863965237990CC009CA6C3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863964237990CC009CA6C3 /* UIViewController.swift */; };
 		078639672379916B009CA6C3 /* BorderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639662379916B009CA6C3 /* BorderImageView.swift */; };
+		0786396923799265009CA6C3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786396823799265009CA6C3 /* AppCoordinator.swift */; };
+		0786396B237992DA009CA6C3 /* UIStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786396A237992DA009CA6C3 /* UIStyling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		07863962237990B7009CA6C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		07863964237990CC009CA6C3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		078639662379916B009CA6C3 /* BorderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderImageView.swift; sourceTree = "<group>"; };
+		0786396823799265009CA6C3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0786396A237992DA009CA6C3 /* UIStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 			children = (
 				0786393D237988CF009CA6C3 /* Extensions */,
 				0786393E2379890A009CA6C3 /* Protocols */,
+				0786396823799265009CA6C3 /* AppCoordinator.swift */,
 				0786393F23798A9A009CA6C3 /* AppDelegate.swift */,
 				07863914237987B2009CA6C3 /* Info.plist */,
 				07863908237987B1009CA6C3 /* SceneDelegate.swift */,
@@ -234,6 +239,7 @@
 		0786393E2379890A009CA6C3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0786396A237992DA009CA6C3 /* UIStyling.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -426,8 +432,10 @@
 				0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */,
 				0786396023798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift in Sources */,
 				07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */,
+				0786396B237992DA009CA6C3 /* UIStyling.swift in Sources */,
 				078639672379916B009CA6C3 /* BorderImageView.swift in Sources */,
 				0786395923798CA9009CA6C3 /* UsersTableViewController.swift in Sources */,
+				0786396923799265009CA6C3 /* AppCoordinator.swift in Sources */,
 				07863963237990B7009CA6C3 /* UIView.swift in Sources */,
 				0786394223798B67009CA6C3 /* User.swift in Sources */,
 			);
