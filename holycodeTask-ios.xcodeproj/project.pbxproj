@@ -14,6 +14,16 @@
 		0786391E237987B2009CA6C3 /* holycodeTask_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786391D237987B2009CA6C3 /* holycodeTask_iosTests.swift */; };
 		07863929237987B2009CA6C3 /* holycodeTask_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863928237987B2009CA6C3 /* holycodeTask_iosUITests.swift */; };
 		0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786393F23798A9A009CA6C3 /* AppDelegate.swift */; };
+		0786394223798B67009CA6C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786394123798B67009CA6C3 /* User.swift */; };
+		0786394D23798BB2009CA6C3 /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394423798BB2009CA6C3 /* Ubuntu-M.ttf */; };
+		0786394E23798BB2009CA6C3 /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394523798BB2009CA6C3 /* Ubuntu-L.ttf */; };
+		0786394F23798BB2009CA6C3 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394623798BB2009CA6C3 /* Ubuntu-BI.ttf */; };
+		0786395023798BB2009CA6C3 /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394723798BB2009CA6C3 /* Ubuntu-MI.ttf */; };
+		0786395123798BB2009CA6C3 /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394823798BB2009CA6C3 /* Ubuntu-R.ttf */; };
+		0786395223798BB2009CA6C3 /* Ubuntu-LI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394923798BB2009CA6C3 /* Ubuntu-LI.ttf */; };
+		0786395323798BB2009CA6C3 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394A23798BB2009CA6C3 /* Ubuntu-B.ttf */; };
+		0786395423798BB2009CA6C3 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394B23798BB2009CA6C3 /* Ubuntu-C.ttf */; };
+		0786395523798BB2009CA6C3 /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		07863928237987B2009CA6C3 /* holycodeTask_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holycodeTask_iosUITests.swift; sourceTree = "<group>"; };
 		0786392A237987B2009CA6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0786393F23798A9A009CA6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0786394123798B67009CA6C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0786394423798BB2009CA6C3 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		0786394523798BB2009CA6C3 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		0786394623798BB2009CA6C3 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		0786394723798BB2009CA6C3 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		0786394823798BB2009CA6C3 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		0786394923798BB2009CA6C3 /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		0786394A23798BB2009CA6C3 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		0786394B23798BB2009CA6C3 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +165,7 @@
 		0786393823798885009CA6C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0786394323798BB2009CA6C3 /* Fonts */,
 				0786390F237987B2009CA6C3 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -153,6 +174,7 @@
 		0786393923798887009CA6C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0786394123798B67009CA6C3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +217,22 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0786394323798BB2009CA6C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0786394423798BB2009CA6C3 /* Ubuntu-M.ttf */,
+				0786394523798BB2009CA6C3 /* Ubuntu-L.ttf */,
+				0786394623798BB2009CA6C3 /* Ubuntu-BI.ttf */,
+				0786394723798BB2009CA6C3 /* Ubuntu-MI.ttf */,
+				0786394823798BB2009CA6C3 /* Ubuntu-R.ttf */,
+				0786394923798BB2009CA6C3 /* Ubuntu-LI.ttf */,
+				0786394A23798BB2009CA6C3 /* Ubuntu-B.ttf */,
+				0786394B23798BB2009CA6C3 /* Ubuntu-C.ttf */,
+				0786394C23798BB2009CA6C3 /* Ubuntu-RI.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +339,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0786395523798BB2009CA6C3 /* Ubuntu-RI.ttf in Resources */,
+				0786395023798BB2009CA6C3 /* Ubuntu-MI.ttf in Resources */,
+				0786394F23798BB2009CA6C3 /* Ubuntu-BI.ttf in Resources */,
+				0786395123798BB2009CA6C3 /* Ubuntu-R.ttf in Resources */,
 				07863913237987B2009CA6C3 /* LaunchScreen.storyboard in Resources */,
+				0786394E23798BB2009CA6C3 /* Ubuntu-L.ttf in Resources */,
+				0786395423798BB2009CA6C3 /* Ubuntu-C.ttf in Resources */,
+				0786394D23798BB2009CA6C3 /* Ubuntu-M.ttf in Resources */,
+				0786395323798BB2009CA6C3 /* Ubuntu-B.ttf in Resources */,
+				0786395223798BB2009CA6C3 /* Ubuntu-LI.ttf in Resources */,
 				07863910237987B2009CA6C3 /* Assets.xcassets in Resources */,
 				0786390E237987B1009CA6C3 /* Main.storyboard in Resources */,
 			);
@@ -330,6 +377,7 @@
 			files = (
 				0786394023798A9A009CA6C3 /* AppDelegate.swift in Sources */,
 				07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */,
+				0786394223798B67009CA6C3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
