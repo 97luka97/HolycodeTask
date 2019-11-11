@@ -14,6 +14,7 @@ struct User: Codable {
     let dob: Dob
     let picture: Picture
     let email: String
+    let gender: String
     let nat: String
 }
 
@@ -24,12 +25,14 @@ extension User {
         case dob
         case picture
         case email
+        case gender
         case nat
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         email = try container.decode(String.self, forKey: .email)
+        gender = try container.decode(String.self, forKey: .gender)
         nat = try container.decode(String.self, forKey: .nat)
         name = try container.decode(Name.self, forKey: .name)
         dob = try container.decode(Dob.self, forKey: .dob)
