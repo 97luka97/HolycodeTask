@@ -39,6 +39,10 @@
 		07863974237994DB009CA6C3 /* UsersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863973237994DB009CA6C3 /* UsersListRequest.swift */; };
 		0786397723799522009CA6C3 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397623799522009CA6C3 /* UsersRepository.swift */; };
 		078639792379E8A1009CA6C3 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639782379E8A1009CA6C3 /* UIImageView.swift */; };
+		0786397D2379EC9F009CA6C3 /* UserDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397B2379EC9F009CA6C3 /* UserDetailsTableViewController.swift */; };
+		0786397E2379EC9F009CA6C3 /* UserDetailsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786397C2379EC9F009CA6C3 /* UserDetailsTableViewController.xib */; };
+		078639832379ED07009CA6C3 /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639812379ED07009CA6C3 /* UserDetailsTableViewCell.swift */; };
+		078639842379ED07009CA6C3 /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */; };
 		42964D1C2CF972D36093D60A /* Pods_holycodeTask_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE19D81EF0B23771EE9BDCE /* Pods_holycodeTask_iosUITests.framework */; };
 		6BBD3616A7CCF4A577DD06B4 /* Pods_holycodeTask_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3D41A7F763B06B49F92023 /* Pods_holycodeTask_ios.framework */; };
 		9F2C4B09D7DD273EA53BF704 /* Pods_holycodeTask_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */; };
@@ -100,6 +104,10 @@
 		07863973237994DB009CA6C3 /* UsersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListRequest.swift; sourceTree = "<group>"; };
 		0786397623799522009CA6C3 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
 		078639782379E8A1009CA6C3 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		0786397B2379EC9F009CA6C3 /* UserDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewController.swift; sourceTree = "<group>"; };
+		0786397C2379EC9F009CA6C3 /* UserDetailsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewController.xib; sourceTree = "<group>"; };
+		078639812379ED07009CA6C3 /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holycodeTask_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2413982DDD6F19A12145CF74 /* Pods-holycodeTask-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.debug.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		39CC8A8E138AD3F2F23E1320 /* Pods-holycodeTask-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.release.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +264,7 @@
 		0786393C237988CC009CA6C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0786397A2379EC81009CA6C3 /* UserDetailsTableViewController */,
 				0786395623798C89009CA6C3 /* UsersTableViewController */,
 			);
 			path = ViewControllers;
@@ -308,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				0786395D23798D48009CA6C3 /* BasicUserDetailsTableViewCell */,
+				078639802379ECEA009CA6C3 /* UserDetailsTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -335,6 +345,24 @@
 				0786397623799522009CA6C3 /* UsersRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0786397A2379EC81009CA6C3 /* UserDetailsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0786397B2379EC9F009CA6C3 /* UserDetailsTableViewController.swift */,
+				0786397C2379EC9F009CA6C3 /* UserDetailsTableViewController.xib */,
+			);
+			path = UserDetailsTableViewController;
+			sourceTree = "<group>";
+		};
+		078639802379ECEA009CA6C3 /* UserDetailsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				078639812379ED07009CA6C3 /* UserDetailsTableViewCell.swift */,
+				078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */,
+			);
+			path = UserDetailsTableViewCell;
 			sourceTree = "<group>";
 		};
 		0AB4B3D4FA145F6661892545 /* Pods */ = {
@@ -473,11 +501,13 @@
 				0786395A23798CA9009CA6C3 /* UsersTableViewController.xib in Resources */,
 				0786394F23798BB2009CA6C3 /* Ubuntu-BI.ttf in Resources */,
 				0786396123798D6B009CA6C3 /* BasicUserDetailsTableViewCell.xib in Resources */,
+				078639842379ED07009CA6C3 /* UserDetailsTableViewCell.xib in Resources */,
 				0786395123798BB2009CA6C3 /* Ubuntu-R.ttf in Resources */,
 				07863913237987B2009CA6C3 /* LaunchScreen.storyboard in Resources */,
 				0786394E23798BB2009CA6C3 /* Ubuntu-L.ttf in Resources */,
 				0786395423798BB2009CA6C3 /* Ubuntu-C.ttf in Resources */,
 				0786394D23798BB2009CA6C3 /* Ubuntu-M.ttf in Resources */,
+				0786397E2379EC9F009CA6C3 /* UserDetailsTableViewController.xib in Resources */,
 				0786395323798BB2009CA6C3 /* Ubuntu-B.ttf in Resources */,
 				0786395223798BB2009CA6C3 /* Ubuntu-LI.ttf in Resources */,
 				07863910237987B2009CA6C3 /* Assets.xcassets in Resources */,
@@ -598,6 +628,8 @@
 				0786396023798D6B009CA6C3 /* BasicUserDetailsTableViewCell.swift in Sources */,
 				07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */,
 				0786396E23799400009CA6C3 /* APIManager.swift in Sources */,
+				0786397D2379EC9F009CA6C3 /* UserDetailsTableViewController.swift in Sources */,
+				078639832379ED07009CA6C3 /* UserDetailsTableViewCell.swift in Sources */,
 				0786396B237992DA009CA6C3 /* UIStyling.swift in Sources */,
 				078639672379916B009CA6C3 /* BorderImageView.swift in Sources */,
 				078639792379E8A1009CA6C3 /* UIImageView.swift in Sources */,

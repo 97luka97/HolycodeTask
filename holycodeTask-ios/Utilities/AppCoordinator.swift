@@ -29,3 +29,23 @@ class AppCoordinator: NSObject, Coordinatable {
         window.makeKeyAndVisible()
     }
 }
+
+
+struct UserDetailsCoordinator: Coordinatable {
+    
+    let navigationController: UINavigationController?
+    let source: UIViewController
+    let user: User
+    
+    init(navigationController: UINavigationController?, source: UIViewController, user: User) {
+        self.navigationController = navigationController
+        self.source = source
+        self.user = user
+    }
+    
+    func start() {
+        let userDetails = UserDetailsTableViewController.init(nibName: UserDetailsTableViewController.name, bundle: nil)
+        userDetails.user = user
+        navigationController?.pushViewController(userDetails, animated: true)
+    }
+}
