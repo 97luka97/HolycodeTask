@@ -36,6 +36,8 @@
 		0786396E23799400009CA6C3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786396D23799400009CA6C3 /* APIManager.swift */; };
 		078639702379940B009CA6C3 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786396F2379940B009CA6C3 /* APIRequests.swift */; };
 		0786397223799413009CA6C3 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397123799413009CA6C3 /* APIRoutes.swift */; };
+		07863974237994DB009CA6C3 /* UsersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863973237994DB009CA6C3 /* UsersListRequest.swift */; };
+		0786397723799522009CA6C3 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397623799522009CA6C3 /* UsersRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		0786396D23799400009CA6C3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0786396F2379940B009CA6C3 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		0786397123799413009CA6C3 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
+		07863973237994DB009CA6C3 /* UsersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListRequest.swift; sourceTree = "<group>"; };
+		0786397623799522009CA6C3 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,7 @@
 		0786393923798887009CA6C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				078639752379950E009CA6C3 /* Repositories */,
 				0786394123798B67009CA6C3 /* User.swift */,
 			);
 			path = Models;
@@ -299,8 +304,17 @@
 		0786396C237993F2009CA6C3 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				07863973237994DB009CA6C3 /* UsersListRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		078639752379950E009CA6C3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0786397623799522009CA6C3 /* UsersRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +471,8 @@
 				0786396923799265009CA6C3 /* AppCoordinator.swift in Sources */,
 				07863963237990B7009CA6C3 /* UIView.swift in Sources */,
 				078639702379940B009CA6C3 /* APIRequests.swift in Sources */,
+				07863974237994DB009CA6C3 /* UsersListRequest.swift in Sources */,
+				0786397723799522009CA6C3 /* UsersRepository.swift in Sources */,
 				0786394223798B67009CA6C3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
