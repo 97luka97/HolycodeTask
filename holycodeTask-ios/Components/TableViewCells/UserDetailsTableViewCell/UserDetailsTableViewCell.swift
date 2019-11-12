@@ -42,9 +42,12 @@ class UserDetailsTableViewCell: UITableViewCell {
     
     func populateData(with user: User) {
         self.nameLabel.text = "\(user.name.title) \(user.name.firstName) \(user.name.lastName)"
+        self.nameLabel.textColor = user.gender == "male" ? UIColor.endMaleColor : UIColor.endFemaleColor
         self.ageLabel.text = "\(user.dob.age), \(user.gender)"
+        self.ageLabel.textColor = user.gender == "male" ? UIColor.endMaleColor : UIColor.endFemaleColor
         self.emailAddressLabel.text = user.email
-        self.avatarImage.setImage(from: user.picture.large, placeholder: UIImage(named: "avatarPlaceholder"))
+        self.avatarImage.kf.setImage(with: user.picture.large)
+        self.avatarImage.borderColor = user.gender == "male" ? UIColor.endMaleColor : UIColor.endFemaleColor
     }
 }
 

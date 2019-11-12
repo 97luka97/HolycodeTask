@@ -14,5 +14,11 @@ extension UIView {
         return String(describing: self)
     }
     
+    func setShadow(color: UIColor) {
+        layer.shadowColor = color.cgColor
+        layer.shadowOpacity = 3
+        layer.shadowOffset = .zero
+        layer.shadowRadius = 5
+    }
 }
 

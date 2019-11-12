@@ -13,6 +13,7 @@ class BasicUserDetailsTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var gradientContentView: GradientView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
@@ -30,8 +31,10 @@ class BasicUserDetailsTableViewCell: UITableViewCell {
     func populateData(with user: User) {
         self.nameLabel.text = "Name: \(user.name.firstName) \(user.name.lastName)"
         self.ageLabel.text = "Age: \(user.dob.age)"
-        self.avatarImage.setImage(from: user.picture.medium, placeholder: UIImage(named: "avatarPlaceholder"))
-        self.flagImage.setImage(from: BaseURL.flag.rawValue + APIPath.getFlag(user.nat, size: 32).path, placeholder: nil)
+        self.avatarImage.kf.setImage(with: user.picture.medium, placeholder: UIImage(named: "avatarPlaceholder"))
+        self.flagImage.kf.setImage(with: URL(string: BaseURL.flag.rawValue + APIPath.getFlag(user.nat, size: 32).path))
+        self.gradientContentView.startColor = user.gender == "male" ? UIColor.startMaleColor : UIColor.startFemaleColor
+        self.gradientContentView.endColor = user.gender == "male" ? UIColor.endMaleColor : UIColor.endFemaleColor
     }
 }
 
@@ -42,6 +45,8 @@ extension BasicUserDetailsTableViewCell: UIStyling {
     func setupViews() {
         avatarImage.image = nil
         flagImage.image = nil
+        gradientContentView.setShadow(color: .black)
+        gradientContentView.layer.cornerRadius = 10
     }
     
     func setupConstraints() {

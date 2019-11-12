@@ -13,7 +13,7 @@ class UserDetailsTableViewController: UITableViewController {
     
     // MARK: - Properties
     
-    var user: User?
+    var user: User!
     
     // MARK: - Lifecycle methods
     
@@ -30,12 +30,11 @@ class UserDetailsTableViewController: UITableViewController {
     }
     
     fileprivate func openMailComposer() {
-        if MFMailComposeViewController.canSendMail() {
-            let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self
-            mail.setToRecipients([user?.email ?? ""])
-            self.present(mail, animated: true, completion: nil)
-        }
+        guard MFMailComposeViewController.canSendMail() else { return }
+        let mail = MFMailComposeViewController()
+        mail.mailComposeDelegate = self
+        mail.setToRecipients([user.email])
+        self.present(mail, animated: true, completion: nil)
     }
 }
 
@@ -48,9 +47,8 @@ extension UserDetailsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserDetailsTableViewCell.name, for: indexPath) as? UserDetailsTableViewCell,
-            let user = self.user else {
-                return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserDetailsTableViewCell.name, for: indexPath) as? UserDetailsTableViewCell else {
+            fatalError("Cell doesn't exist")
         }
         cell.delegate = self
         cell.populateData(with: user)
@@ -67,11 +65,6 @@ extension UserDetailsTableViewController: UIStyling {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = 310
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .black
-        
-        guard let user = user else {
-            return
-        }
         
         navigationItem.title = "\(user.name.firstName) \(user.name.lastName)"
     }

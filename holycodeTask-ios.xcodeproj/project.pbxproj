@@ -38,11 +38,12 @@
 		0786397223799413009CA6C3 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397123799413009CA6C3 /* APIRoutes.swift */; };
 		07863974237994DB009CA6C3 /* UsersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863973237994DB009CA6C3 /* UsersListRequest.swift */; };
 		0786397723799522009CA6C3 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397623799522009CA6C3 /* UsersRepository.swift */; };
-		078639792379E8A1009CA6C3 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639782379E8A1009CA6C3 /* UIImageView.swift */; };
 		0786397D2379EC9F009CA6C3 /* UserDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786397B2379EC9F009CA6C3 /* UserDetailsTableViewController.swift */; };
 		0786397E2379EC9F009CA6C3 /* UserDetailsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786397C2379EC9F009CA6C3 /* UserDetailsTableViewController.xib */; };
 		078639832379ED07009CA6C3 /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078639812379ED07009CA6C3 /* UserDetailsTableViewCell.swift */; };
 		078639842379ED07009CA6C3 /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */; };
+		0786398C237AD84B009CA6C3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786398B237AD84B009CA6C3 /* GradientView.swift */; };
+		0786398E237AD8BE009CA6C3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786398D237AD8BE009CA6C3 /* UIColor.swift */; };
 		42964D1C2CF972D36093D60A /* Pods_holycodeTask_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE19D81EF0B23771EE9BDCE /* Pods_holycodeTask_iosUITests.framework */; };
 		6BBD3616A7CCF4A577DD06B4 /* Pods_holycodeTask_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3D41A7F763B06B49F92023 /* Pods_holycodeTask_ios.framework */; };
 		9F2C4B09D7DD273EA53BF704 /* Pods_holycodeTask_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */; };
@@ -103,11 +104,12 @@
 		0786397123799413009CA6C3 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 		07863973237994DB009CA6C3 /* UsersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListRequest.swift; sourceTree = "<group>"; };
 		0786397623799522009CA6C3 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
-		078639782379E8A1009CA6C3 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0786397B2379EC9F009CA6C3 /* UserDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewController.swift; sourceTree = "<group>"; };
 		0786397C2379EC9F009CA6C3 /* UserDetailsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewController.xib; sourceTree = "<group>"; };
 		078639812379ED07009CA6C3 /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		0786398B237AD84B009CA6C3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0786398D237AD8BE009CA6C3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holycodeTask_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2413982DDD6F19A12145CF74 /* Pods-holycodeTask-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.debug.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		39CC8A8E138AD3F2F23E1320 /* Pods-holycodeTask-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.release.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			children = (
 				0786395B23798D2A009CA6C3 /* TableViewCells */,
 				078639662379916B009CA6C3 /* BorderImageView.swift */,
+				0786398B237AD84B009CA6C3 /* GradientView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -275,7 +278,7 @@
 			children = (
 				07863962237990B7009CA6C3 /* UIView.swift */,
 				07863964237990CC009CA6C3 /* UIViewController.swift */,
-				078639782379E8A1009CA6C3 /* UIImageView.swift */,
+				0786398D237AD8BE009CA6C3 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -630,9 +633,10 @@
 				0786396E23799400009CA6C3 /* APIManager.swift in Sources */,
 				0786397D2379EC9F009CA6C3 /* UserDetailsTableViewController.swift in Sources */,
 				078639832379ED07009CA6C3 /* UserDetailsTableViewCell.swift in Sources */,
+				0786398E237AD8BE009CA6C3 /* UIColor.swift in Sources */,
+				0786398C237AD84B009CA6C3 /* GradientView.swift in Sources */,
 				0786396B237992DA009CA6C3 /* UIStyling.swift in Sources */,
 				078639672379916B009CA6C3 /* BorderImageView.swift in Sources */,
-				078639792379E8A1009CA6C3 /* UIImageView.swift in Sources */,
 				0786395923798CA9009CA6C3 /* UsersTableViewController.swift in Sources */,
 				0786396923799265009CA6C3 /* AppCoordinator.swift in Sources */,
 				07863963237990B7009CA6C3 /* UIView.swift in Sources */,
@@ -816,7 +820,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYZ7SXL53X;
 				INFOPLIST_FILE = "holycodeTask-ios/Utilities/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -836,7 +840,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYZ7SXL53X;
 				INFOPLIST_FILE = "holycodeTask-ios/Utilities/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
