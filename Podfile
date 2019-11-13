@@ -7,16 +7,12 @@ target 'holycodeTask-ios' do
 
   # Pods for holycodeTask-ios
 
-  target 'holycodeTask-iosTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'holycodeTask-iosUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 pod ‘Kingfisher'
 
 end
+
+  target 'holycodeTask-iosTests' do
+    inherit! :search_paths
+	use_frameworks!
+	pod ‘Kingfisher'
+  end

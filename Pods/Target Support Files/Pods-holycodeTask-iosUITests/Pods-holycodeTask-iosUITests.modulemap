@@ -1,6 +1,0 @@
-framework module Pods_holycodeTask_iosUITests {
-  umbrella header "Pods-holycodeTask-iosUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

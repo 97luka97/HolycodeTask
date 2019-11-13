@@ -4,28 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Kingfisher.xcscheme</key>
+		<key>Kingfisher-iOS12.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-holycodeTask-ios.xcscheme</key>
+		<key>Kingfisher-iOS13.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-holycodeTask-iosTests.xcscheme</key>
+		<key>Pods-holycodeTask-ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Pods-holycodeTask-iosUITests.xcscheme</key>
+		<key>Pods-holycodeTask-iosTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

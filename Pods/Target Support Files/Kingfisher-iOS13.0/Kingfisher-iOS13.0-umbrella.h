@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "Kingfisher.h"
 
-FOUNDATION_EXPORT double Pods_holycodeTask_iosUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_holycodeTask_iosUITestsVersionString[];
+FOUNDATION_EXPORT double KingfisherVersionNumber;
+FOUNDATION_EXPORT const unsigned char KingfisherVersionString[];
 

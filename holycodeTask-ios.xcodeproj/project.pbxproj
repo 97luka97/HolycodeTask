@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071B2F85237B56600086E8E8 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071B2F84237B56600086E8E8 /* JSONTests.swift */; };
 		07863909237987B1009CA6C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07863908237987B1009CA6C3 /* SceneDelegate.swift */; };
 		0786390E237987B1009CA6C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0786390C237987B1009CA6C3 /* Main.storyboard */; };
 		07863910237987B2009CA6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0786390F237987B2009CA6C3 /* Assets.xcassets */; };
@@ -44,7 +45,6 @@
 		078639842379ED07009CA6C3 /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078639822379ED07009CA6C3 /* UserDetailsTableViewCell.xib */; };
 		0786398C237AD84B009CA6C3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786398B237AD84B009CA6C3 /* GradientView.swift */; };
 		0786398E237AD8BE009CA6C3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786398D237AD8BE009CA6C3 /* UIColor.swift */; };
-		42964D1C2CF972D36093D60A /* Pods_holycodeTask_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE19D81EF0B23771EE9BDCE /* Pods_holycodeTask_iosUITests.framework */; };
 		6BBD3616A7CCF4A577DD06B4 /* Pods_holycodeTask_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3D41A7F763B06B49F92023 /* Pods_holycodeTask_ios.framework */; };
 		9F2C4B09D7DD273EA53BF704 /* Pods_holycodeTask_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071B2F84237B56600086E8E8 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		07863903237987B1009CA6C3 /* holycodeTask-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "holycodeTask-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07863908237987B1009CA6C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0786390D237987B1009CA6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,10 +115,7 @@
 		2413982DDD6F19A12145CF74 /* Pods-holycodeTask-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.debug.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		39CC8A8E138AD3F2F23E1320 /* Pods-holycodeTask-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-ios.release.xcconfig"; path = "Target Support Files/Pods-holycodeTask-ios/Pods-holycodeTask-ios.release.xcconfig"; sourceTree = "<group>"; };
 		3E3D41A7F763B06B49F92023 /* Pods_holycodeTask_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holycodeTask_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8564BCECD5A4572B7F14C567 /* Pods-holycodeTask-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-holycodeTask-iosUITests/Pods-holycodeTask-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCB5757AEAF7609EE6BCB999 /* Pods-holycodeTask-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-holycodeTask-iosTests/Pods-holycodeTask-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6AF71F420B9D212A700182B /* Pods-holycodeTask-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-holycodeTask-iosUITests/Pods-holycodeTask-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DBE19D81EF0B23771EE9BDCE /* Pods_holycodeTask_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holycodeTask_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCC6E4972238956F2F8E678 /* Pods-holycodeTask-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holycodeTask-iosTests.release.xcconfig"; path = "Target Support Files/Pods-holycodeTask-iosTests/Pods-holycodeTask-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,13 +140,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42964D1C2CF972D36093D60A /* Pods_holycodeTask_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071B2F82237B560B0086E8E8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				071B2F83237B562A0086E8E8 /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		071B2F83237B562A0086E8E8 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				071B2F84237B56600086E8E8 /* JSONTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 		078638FA237987B1009CA6C3 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,7 @@
 				0786393823798885009CA6C3 /* Resources */,
 				0786393723798883009CA6C3 /* NetworkingService */,
 				078639362379887E009CA6C3 /* Storyboards */,
+				071B2F82237B560B0086E8E8 /* Tests */,
 				0786393B237988C8009CA6C3 /* Utilities */,
 				0786393C237988CC009CA6C3 /* ViewControllers */,
 			);
@@ -375,8 +389,6 @@
 				39CC8A8E138AD3F2F23E1320 /* Pods-holycodeTask-ios.release.xcconfig */,
 				BCB5757AEAF7609EE6BCB999 /* Pods-holycodeTask-iosTests.debug.xcconfig */,
 				FFCC6E4972238956F2F8E678 /* Pods-holycodeTask-iosTests.release.xcconfig */,
-				8564BCECD5A4572B7F14C567 /* Pods-holycodeTask-iosUITests.debug.xcconfig */,
-				D6AF71F420B9D212A700182B /* Pods-holycodeTask-iosUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -386,7 +398,6 @@
 			children = (
 				3E3D41A7F763B06B49F92023 /* Pods_holycodeTask_ios.framework */,
 				1B948592E4260EB731804A24 /* Pods_holycodeTask_iosTests.framework */,
-				DBE19D81EF0B23771EE9BDCE /* Pods_holycodeTask_iosUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -421,6 +432,7 @@
 				07863915237987B2009CA6C3 /* Sources */,
 				07863916237987B2009CA6C3 /* Frameworks */,
 				07863917237987B2009CA6C3 /* Resources */,
+				CDDE89748677F9860E5B4DF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,7 +448,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07863933237987B2009CA6C3 /* Build configuration list for PBXNativeTarget "holycodeTask-iosUITests" */;
 			buildPhases = (
-				6FEAFB87345EB722C66DFE4F /* [CP] Check Pods Manifest.lock */,
 				07863920237987B2009CA6C3 /* Sources */,
 				07863921237987B2009CA6C3 /* Frameworks */,
 				07863922237987B2009CA6C3 /* Resources */,
@@ -596,26 +607,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FEAFB87345EB722C66DFE4F /* [CP] Check Pods Manifest.lock */ = {
+		CDDE89748677F9860E5B4DF5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-holycodeTask-iosTests/Pods-holycodeTask-iosTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-holycodeTask-iosUITests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-holycodeTask-iosTests/Pods-holycodeTask-iosTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-holycodeTask-iosTests/Pods-holycodeTask-iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -652,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0786391E237987B2009CA6C3 /* holycodeTask_iosTests.swift in Sources */,
+				071B2F85237B56600086E8E8 /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,7 +905,6 @@
 		};
 		07863934237987B2009CA6C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8564BCECD5A4572B7F14C567 /* Pods-holycodeTask-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -918,7 +924,6 @@
 		};
 		07863935237987B2009CA6C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6AF71F420B9D212A700182B /* Pods-holycodeTask-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
