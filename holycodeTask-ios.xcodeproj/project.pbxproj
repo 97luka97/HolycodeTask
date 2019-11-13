@@ -68,7 +68,7 @@
 
 /* Begin PBXFileReference section */
 		071B2F84237B56600086E8E8 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
-		07863903237987B1009CA6C3 /* holycodeTask-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "holycodeTask-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07863903237987B1009CA6C3 /* Holycode Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holycode Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07863908237987B1009CA6C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0786390D237987B1009CA6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0786390F237987B2009CA6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		07863904237987B1009CA6C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07863903237987B1009CA6C3 /* holycodeTask-ios.app */,
+				07863903237987B1009CA6C3 /* Holycode Task.app */,
 				07863919237987B2009CA6C3 /* holycodeTask-iosTests.xctest */,
 				07863924237987B2009CA6C3 /* holycodeTask-iosUITests.xctest */,
 			);
@@ -421,7 +421,7 @@
 			);
 			name = "holycodeTask-ios";
 			productName = "holycodeTask-ios";
-			productReference = 07863903237987B1009CA6C3 /* holycodeTask-ios.app */;
+			productReference = 07863903237987B1009CA6C3 /* Holycode Task.app */;
 			productType = "com.apple.product-type.application";
 		};
 		07863918237987B2009CA6C3 /* holycodeTask-iosTests */ = {
@@ -833,7 +833,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holycodeTask-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Holycode Task";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -853,7 +853,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holycodeTask-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Holycode Task";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
